@@ -84,7 +84,8 @@ export class AppComponent implements OnInit {
   }
 
   save() {
-    return localStorage.setItem('contacts', JSON.stringify(this.contacts, null, ' '));
+    localStorage.setItem('contacts', JSON.stringify(this.contacts, null, ' '));
+    return alert('Changes has been saved to localStorage');
   }
 
   getFromStorage() {

@@ -2,14 +2,14 @@
     <div class="card">
         <form class="form-group" [formGroup]="loginForm">
             <div class="search-group">
-                <i class="fas fa-search search-icon"></i>
+                <i class="fas fa-search search-icon faded"></i>
                 <input formControlName="searchField" type="text" class="search-input" placeholder="Add Channel">
             </div>
         </form>
         <div #activeList="cdkDropList" class="box-list" cdkDropList cdkDropListOrientation="vertical" [cdkDropListData]="contacts" (cdkDropListDropped)="drop($event)" class="contact-list">
             <div cdkDrag *ngFor="let contact of contacts;let i =index" class="contact-items mb-40">
                 <div class="options">
-                    <i class="fas fa-grip-vertical fa-1x mr-20"></i>
+                    <i class="fas fa-grip-vertical fa-1x mr-20 faded"></i>
                     <i [ngClass]="contact.icon" class=" mr-20"></i>
                 </div>
                 <p class="title">{{contact.name}}</p>
