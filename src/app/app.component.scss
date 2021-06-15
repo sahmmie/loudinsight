@@ -1,11 +1,15 @@
 .card {
-    width: inherit;
+    width: 100%;
     max-width: 562px;
+    min-height: 514px;
     border-radius: .5rem;
-    border-width: 1px;
     box-shadow: 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     color: rgba(17, 24, 39, 1);
     padding: 16px;
+    position: relative;
+    border-width: 2px;
+    border: solid 1px;
+    border-color: #e5e7eb;
 }
 
 .container {
@@ -37,16 +41,76 @@
 .contact-items {
     display: flex;
     // justify-content: space-between;
-    // align-items: center;
+    align-items: center;
 }
 
 .link-btn {
     text-decoration: none;
-    color: inherit;
+    color: #6b7280;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: 32px;
 }
 
 .contact-list {
     margin-top: 30px;
     padding-left: 22px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.options {
+    flex-flow: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    justify-items: center;
+    display: contents;
+}
+
+.btn-group {
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 26px;
+    margin-left: 48px;
+}
+
+.btn-cancel {
+    margin-right: 16px;
+    background-color: inherit;
+    border-radius: 16px;
+    padding: 8px 16px 8px 16px;
+    border: solid 1px;
+    border-color: #e5e7eb;
+}
+
+.btn-apply {
+    margin-right: 16px;
+    background-color: rgba(17, 24, 39);
+    color: white;
+    border-radius: 16px;
+    padding: 8px 16px 8px 16px;
+    border: solid 1px;
+    border-color: #e5e7eb;
+}
+
+.w-100 {
+    width: 100%;
 }
